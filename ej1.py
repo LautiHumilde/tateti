@@ -37,15 +37,29 @@ for i in range(0,len(tateti)):
     for j in range(0,len(tateti)):
             ficha = "nada"
 
-            if jugadorQempieza == "X":
-                if i+j % 2 == 0:
-                      ficha = "X"
-                else:
-                    ficha = "O"
-            else:
-                if jugadorQempieza == "O":
+            if jugadorQempieza == nombre1:
+                 if jugador1 == "X":
                     if i+j % 2 == 0:
+                        ficha = "X"
+                    else:
                         ficha = "O"
+                 else:
+                    if jugador1 == "O":
+                        if i+j % 2 == 0:
+                            ficha = "O"
+                    else:
+                        ficha = "X"
+            else:
+                if jugadorQempieza == nombre2:
+                    if jugador2 == "X":
+                        if i+j % 2 == 0:
+                            ficha = "X"
+                    else:
+                        ficha = "O"
+                else:
+                    if jugador2 == "O":
+                        if i+j % 2 == 0:
+                            ficha = "O"
                     else:
                         ficha = "X"
             
@@ -69,6 +83,8 @@ for i in range(0,len(tateti)):
                  else:
                       print("la pocicion q ingresaste se pasa o no esta adentro del tateti/n porfavor ingresa una pocicion que este adentro")
                       fila = input("ingresa la posicion")
+            
+            tateti[fila][columna].append(fila)
 
             print(f"" + tateti[0][0]+ " " + tateti[0][1] + " " +  tateti[0][2])
             print(f"" + tateti[1][0]+ " " + tateti[1][1] + " " +  tateti[1][2])
