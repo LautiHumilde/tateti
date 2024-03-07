@@ -32,280 +32,160 @@ tateti = [
     ["-","-","-"]
     ]
 
+contador = 0
+
 for i in range(0,len(tateti)):
     for j in range(0,len(tateti)):
+            
+            print(f"" + tateti[0][0]+ " " + tateti[0][1] + " " +  tateti[0][2])
+            print(f"" + tateti[1][0]+ " " + tateti[1][1] + " " +  tateti[1][2])
+            print(f"" + tateti[2][0]+ " " + tateti[2][1] + " " +  tateti[2][2])
+
             if jugadorQempieza == nombre1 and jugador1 == "X":
-
                 #horizontal
-
                 if tateti[0] == ["X","X","X"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
             
                 if tateti[1] == ["X","X","X"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
 
                 if tateti[2] == ["X","X","X"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
-
                 #vertical
-
                 if tateti[0][0] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][0] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][0] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
                 if tateti[0][1] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][1] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
                 
                 if tateti[0][2] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][2] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
                 #diagonal
-                        
                 if tateti[0][0] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
-
-
                 if tateti[0][0] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "X":
                             print(f"gano el jugador" + jugadorQempieza)
                             break
 
             if jugadorQempieza == nombre1 and jugador1 == "O":
-                
                 #horizontal
                 if tateti[0] == ["O","O","O"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
             
                 if tateti[1] == ["O","O","O"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
 
                 if tateti[2] == ["O","O","O"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
-
                 #vertical
-
                 if tateti[0][0] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][0] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][0] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
                 if tateti[0][1] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][1] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
                 if tateti[0][2] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][2] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
                 #diagonal
                 if tateti[0][0] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
-
 
                 if tateti[2][0] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][0] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
-
-
-
-
-
-
-
-
-
-
-
             
-
+            #le pregunta al otro jugador
             if jugadorQempieza == nombre2 and jugador2 == "X":
-
                 #horizontal
-
                 if tateti[0] == ["X","X","X"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
-            
+
                 if tateti[1] == ["X","X","X"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
 
                 if tateti[2] == ["X","X","X"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
-
                 #vertical
-
                 if tateti[0][0] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][0] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][0] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
                 if tateti[0][1] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][1] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
                 
                 if tateti[0][2] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][2] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
                 #diagonal
-                        
                 if tateti[0][0] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
-
-
                 if tateti[0][0] == "X":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "X":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "X":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
-                
-
-
-
-
-
-
 
             if jugadorQempieza == nombre2 and jugador2 == "O":
-                
                 #horizontal
                 if tateti[0] == ["O","O","O"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
             
                 if tateti[1] == ["O","O","O"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
 
                 if tateti[2] == ["O","O","O"]:
-                    print(f"gano el jugador" + jugadorQempieza)
                     break
-
                 #vertical
-
                 if tateti[0][0] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][0] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][0] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
                 if tateti[0][1] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][1] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
 
                 if tateti[0][2] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][2] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
                 #diagonal
                 if tateti[0][0] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][2] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
-
 
                 if tateti[2][0] == "O":
-                     print(f"gano el jugador" + jugadorQempieza)
                      if tateti[1][1] == "O":
-                        print(f"gano el jugador" + jugadorQempieza)
                         if tateti[2][0] == "O":
-                            print(f"gano el jugador" + jugadorQempieza)
                             break
-
-
-
-
-
-
-
-
 
             ficha1 = "nada"
             ficha2 = "nada"
@@ -327,9 +207,11 @@ for i in range(0,len(tateti)):
 
             for romper in range(0,100):
                  if fila == "0" or fila == "1" or fila == "2":
-                      break
+                      fila = int(fila)
+                      if tateti[fila][0] != "X" or tateti[fila][0] != "O" or tateti[fila][1] != "X" or tateti[fila][1] != "O" or tateti[fila][2] != "X" or tateti[fila][2] != "O":
+                          break
                  else:
-                      print("la pocicion q ingresaste se pasa o no esta adentro del tateti/n porfavor ingresa una pocicion que este adentro")
+                      print("la pocicion q ingresaste se pasa o no esta adentro del tateti o tal vez ya esta completa la fila, porfavor ingresa una pocicion que este adentro")
                       print("ingresa la posicion : ")
                       fila = input()
 
@@ -339,7 +221,7 @@ for i in range(0,len(tateti)):
                  if columna == "0" or columna == "1" or columna == "2":
                       break
                  else:
-                      print("la pocicion q ingresaste se pasa o no esta adentro del tateti/n porfavor ingresa una pocicion que este adentro")
+                      print("la pocicion q ingresaste se pasa o no esta adentro del tateti o tal vez ya hay una ficha hay, porfavor ingresa una pocicion que este adentro")
                       print("ingresa la posicion : ")
                       columna = input()
             
@@ -352,15 +234,9 @@ for i in range(0,len(tateti)):
             else:
                  tateti[fila][columna] = ficha2
 
-            print(f"" + tateti[0][0]+ " " + tateti[0][1] + " " +  tateti[0][2])
-            print(f"" + tateti[1][0]+ " " + tateti[1][1] + " " +  tateti[1][2])
-            print(f"" + tateti[2][0]+ " " + tateti[2][1] + " " +  tateti[2][2])
-
             if jugadorQempieza == nombre1:
                 jugadorQempieza = nombre2
             else:
                 jugadorQempieza = nombre1
-
-
 
 print(f"gano " + jugadorQempieza)
